@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <h1>Alunos</h1>
+    </header>
+
+
+    <main>
+        {%for aluno in alunos%}
+        <div>
+            <h1>{{aluno.nome}}</h1>
+            <p>{{aluno.email}}</p>
+        </div>
+        {%endfor%}
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
